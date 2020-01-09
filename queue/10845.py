@@ -45,18 +45,24 @@ def back():
         print(-1)
 
 
-push(1)
-push(2)
-front()
-back()
-size()
-empty()
-pop()
-pop()
-pop()
-size()
-empty()
-pop()
-push(3)
-empty()
-front()
+def execute_command(command):
+    if 'push' in command:
+        push(int(command[1]))
+    elif 'pop' in command:
+        pop()
+    elif 'front' in command:
+        front()
+    elif 'back' in command:
+        back()
+    elif 'empty' in command:
+        empty()
+    elif 'size' in command:
+        size()
+    else:
+        print("invalid command")
+
+
+iteration_num = int(input())
+for i in range(iteration_num):
+    command = input().split()
+    execute_command(command)
