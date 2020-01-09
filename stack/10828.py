@@ -1,3 +1,4 @@
+import sys
 from collections import deque
 
 stack = deque()
@@ -54,5 +55,5 @@ def execute_command(command):
 
 iteration_num = int(input())
 for i in range(iteration_num):
-    command = input().split()
+    command = sys.stdin.readline().split()
     execute_command(command)
