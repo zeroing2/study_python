@@ -58,5 +58,3 @@ for i in range(iteration):
         print("YES")
     else:
         print("NO")
-    # print("total: ", total)
-    # print("stack_size: ", len(stack))

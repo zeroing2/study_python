@@ -37,17 +37,6 @@ for i in range(iteration_num):
             elif pop_priority == q[j].get_priority():
                 equal = True
 
-        # print("[" + str(pop_priority) + "], ", end='')
-        # print("[", end="")
-        # for j in range(len(q)):
-        #     print(str(q[j].get_priority()) + ",", end='')
-        # print("]")
-        #
-        # print("pop_index = %d, target_index = %d, queue_size: %d" % (pop_index, target_index, len(q)))
-        #
-        # print("greater = ", greater)
-        # print("equal = ", equal)
-
         if target_index == pop_index:
             if greater:
                 node = Node(pop_priority, pop_index)
@@ -63,6 +52,4 @@ for i in range(iteration_num):
                 cnt = cnt + 1
 
     print(cnt)
-    # print("que len: ", len(q))
     q.clear()
-    # if()
